@@ -1,0 +1,245 @@
+html,body{
+	margin: 0 auto;
+	padding:0;
+	width:100%;
+	height:100%;
+  /*font-family:georgia*/
+	/*font-family:Apple Chancery;*/
+	text-align:center;
+	font-family: 'georgia', cursive;
+}
+#game{
+	display:inline-block;
+	text-align:center;
+	width:560px;
+	height:450px;
+	padding:10px;
+	margin-top:50px;
+	position:relative;
+}
+#questionText{
+	color:black;
+	border-radius:100%;
+	border:5px solid black;
+	font-size:60px;
+	font-weight:600;
+	float:left;
+	display:inline-block;
+	width:80px;
+	height:90px;
+}
+#titleText{
+	font-style:bold;
+	font-weight:600;
+	color:blue;
+	font-size:60px;
+}
+.qContainer{
+	display:block;
+	margin-top:25px;
+}
+.Qs{
+	border:8px solid black;
+	width:220px;
+	height:70px;
+	background-color:white;
+	font-size:50px;
+	display:inline-block;
+	margin:0px 10px 10px 10px;
+	overflow:hidden;
+}
+.Qs:hover{
+	background: brown; 
+	background: -moz-linear-gradient(left,  black 0%, white 50%, black 100%);
+	background: -webkit-linear-gradient(left,  black 0%, white 50%, black 100%);
+	background: linear-gradient(to right,  black 0%, white 50%, black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='black', endColorstr='black',GradientType=1 );
+	cursor:pointer;
+}
+#bottom{
+	position: absolute;
+	height:60px;
+	width:100%;
+    bottom: 0;
+    left: 0;
+}
+#lives{
+	color:red;
+	float:left;
+	font-size:50px;
+	text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+}
+#liveText{
+	color:red;
+	text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+}
+#skips{
+	float:right;
+}
+.fa-arrow-right{
+	color:solid gray;
+	font-size:40px;
+}
+.aSkip{
+	color:lightgreen;
+}
+#answerTo4:hover{
+	font-size:65px;
+	color:lightblue;
+	cursor:pointer;
+}
+#answerTo10:hover{
+  font-size:60px;
+  color:red;
+  cursor:pointer;
+}
+#rightMouseHere,#leftMouseHere{
+	width:115px;
+	height:115px;
+	background-color:white;
+	border-radius:100%;
+	font-size:30px;
+	border:7px solid red;
+	display:block;
+}
+#rightMouseHere{
+	margin-right:-20px;
+	margin-top:-30px;
+	float:right;
+}
+#leftMouseHere{
+	margin-left:-30px;
+	margin-top:70px;
+}
+#notThis1,#notThis2,#notThis3,#notThis4,#notThis5,#notThis6{
+	color:red;
+	font-size:50px;
+}
+#notThis1{ 
+	top:250px;
+	left:300px;
+}
+#notThis2{
+	bottom:90px;
+	right:80px;
+}
+#notThis3{
+	right:40px;
+	top:80px;
+}
+#notThis4{
+	bottom:50px;
+	left:0px;
+	font-size:70px;
+}
+#notThis5{
+	top:230px;
+	left:70px;
+}
+#notThis6{
+	font-size:100px;
+}
+#hiddenCorrect{
+	color:lightgreen;
+	font-size:50px;
+	top:120px;
+	left:200px;
+}
+#notThis1,#notThis2,#notThis3,#notThis4,#notThis5,#notThis6,#hiddenCorrect{
+	position:absolute;
+	cursor:pointer;
+	opacity:0;
+}
+#notThis1:hover,#notThis2:hover,#notThis3:hover,#notThis4:hover,#notThis5:hover,#notThis6:hover,#hiddenCorrect:hover{
+	opacity:1;
+}
+.sec{
+	cursor:pointer;
+	width:100px;
+	height:150px;
+	font-size:50px;
+	position:relative;
+	display:inline-block;
+}
+#tenOne{
+}
+#tenTwo{
+	width:100%;
+}
+#tenThree{
+}
+#tenFour{
+	width:100%;
+}
+#tenFive{
+}
+#wrong{
+	position:absolute;
+	height:180px;
+	width:270px;
+	border:10px solid red;
+	background-color:black;
+	font-size:60px;
+	color:white;
+	bottom:50px;
+	display:none;
+}
+#red{
+	color:red;
+}
+#gameOverScreen{
+	display:none;
+	position:relative;
+	z-index:2;
+	width:560px;
+	height:450px;
+	background-color:black;
+	font-size:100px;
+	color:white;
+	text-shadow:
+		-3px -3px 0 black,
+		3px -3px 0 black,
+		-3px 3px 0 black,
+		3px 3px 0 black;  
+}
+#againGameOver:hover{
+	cursor:pointer;
+	color:blue;
+	text-shadow:
+		-3px -3px 0 black,
+		3px -3px 0 black,
+		-3px 3px 0 black,
+		3px 3px 0 black;  
+}
+#redGameOver{
+	display:block;
+	font-size:90px;
+	font-weight:900;
+	color:red;
+	text-shadow:
+		-3px -3px 0 white,
+		3px -3px 0 white,
+		-3px 3px 0 white,
+		3px 3px 0 white;  
+}
+#win{
+	background-color:black;
+	color:red;
+	font-size:50px;
+	padding:20px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:center;
+	opacity:0.7;
+}
